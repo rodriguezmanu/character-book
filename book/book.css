@@ -1,0 +1,94 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#test-frame .list {
+    list-style: none;
+    border-right: 1px #CCCCCC solid;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin: 0 10px;
+    overflow: auto;
+    padding: 0px;
+    width: 200px;
+}
+
+#test-frame .list .item {
+    border-bottom: 1px #CCCCCC solid;
+}
+
+#test-frame .details,
+#test-frame .editor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 220px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#test-frame .details > div {
+    display: flex;
+    justify-content: center;
+}
+
+#test-frame .details > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+#test-frame .editor > div {
+    display: flex;
+    justify-content: center;
+}
+#test-frame .editor > div input,
+#test-frame .editor textarea {
+    margin: 20px;
+}
+
+
+#test-frame img {
+    width: 125px;
+    height: 125px;
+}
+
+#test-frame button {
+    border-radius: 28px;
+    box-shadow: 4px 2px 9px #666666;
+    color: #ffffff;
+    padding: 9px 20px 9px 20px;
+    text-decoration: none;
+    width: 80px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#test-frame button.save {
+    margin-right: 30px;
+}
+
+#test-frame button.save,
+#test-frame button.edit {
+    background: #3498db;
+}
+
+#test-frame button.save:hover,
+#test-frame button.edit:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+
+#test-frame button.cancel {
+    background: #eb0043;
+}
+
+#test-frame button.cancel:hover {
+    background: #fc3c3c;
+    text-decoration: none;
+}
